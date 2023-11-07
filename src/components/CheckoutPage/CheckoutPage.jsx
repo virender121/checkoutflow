@@ -9,7 +9,7 @@ import { MultiSelect } from 'primereact/multiselect';
         
 const CheckoutPage = () => {
   const navigate = useNavigate();
-  const toast = useRef(null);
+  
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null)
   
@@ -289,7 +289,7 @@ const CheckoutPage = () => {
         {cart.map((item, index) => (
       <div key={index} className="d-flex justify-content-between">
       <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-        <h6 style={{ marginRight: '20px' }}>Quantity:{item.quantity}*{item.name}</h6>
+        <h4 style={{ marginRight: '20px' }}>Quantity:{item.quantity}*{item.name}</h4>
         <p>{item.price}</p>
       </div>
     </div>

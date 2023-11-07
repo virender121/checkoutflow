@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-import { Dialog } from 'primereact/dialog';
 import { productData } from '../data/productsData';
 import { useNavigate } from 'react-router-dom';
 import { Rating } from "primereact/rating";
